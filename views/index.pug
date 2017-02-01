@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  body
+    div
+      div
+       .navbar.navbar-inverse(style='padding-left:130px;', role='navigation')
+         ul.nav.navbar-nav
+           li.active
+             a(href='/', title='Home')= 'Home'
+               span(class='sr-only')= '(current)'
+           li
+             a(href='/about', title='About')= 'About'
+           li
+             a(href='/contact', title='Contact Us')= 'Contact Us'
+      br
+      div(class='jumbotron')
+        p.
+          This is place to put content. You can put slider, short description about your website and place some links for navigation.
+
+

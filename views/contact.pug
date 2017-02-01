@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  body
+    div
+      div
+       .navbar.navbar-inverse(style='padding-left:130px;', role='navigation')
+         ul.nav.navbar-nav
+           li
+             a(href='/', title='Home')= 'Home'
+           li
+             a(href='/about', title='About')= 'About'
+           li.active
+             a(href='/contact', title='Contact Us')= 'Contact Us'
+               span(class='sr-only')= '(current)'
+      br
+      form(class='form-horizontal', role='form', style='width: 50%;')
+        div.form-group
+          label.col-sm-2.control-label(for='name')= 'Name'
+          div.col-sm-10
+            input.form-control#name(type='text', name='name', placeholder='First & Last Name', value= '')
+        div.form-group
+          label.col-sm-2.control-label(for='email')= 'Email'
+          div.col-sm-10
+            input.form-control#email(type='text', name='email', placeholder='example@domain.com', value= '')
+        div.form-group
+          label.col-sm-2.control-label(for='message')= 'Message'
+          div.col-sm-10
+            textarea.form-control#message(name='message', placeholder='Message', rows=4)
+        div.form-group
+          div.col-sm-10.col-sm-offset-2
+            input.btn.btn-primary#submit(name='submit', type='submit', value='Send')
